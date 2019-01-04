@@ -1,0 +1,187 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', '-save', 'request' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.36
+4 warn package.json test@1.0.0 No description
+5 warn package.json test@1.0.0 No repository field.
+6 warn package.json test@1.0.0 No README data
+7 verbose readDependencies using package.json deps
+8 verbose cache add [ 'request', null ]
+9 verbose cache add name=undefined spec="request" args=["request",null]
+10 verbose parsed url { protocol: null,
+10 verbose parsed url   slashes: null,
+10 verbose parsed url   auth: null,
+10 verbose parsed url   host: null,
+10 verbose parsed url   port: null,
+10 verbose parsed url   hostname: null,
+10 verbose parsed url   hash: null,
+10 verbose parsed url   search: null,
+10 verbose parsed url   query: null,
+10 verbose parsed url   pathname: 'request',
+10 verbose parsed url   path: 'request',
+10 verbose parsed url   href: 'request' }
+11 silly lockFile 088e29b0-request request
+12 verbose lock request /Users/kaleo/.npm/088e29b0-request.lock
+13 silly lockFile 088e29b0-request request
+14 silly lockFile 088e29b0-request request
+15 verbose addNamed [ 'request', '' ]
+16 verbose addNamed [ null, '*' ]
+17 silly lockFile 9d461bcf-request request@
+18 verbose lock request@ /Users/kaleo/.npm/9d461bcf-request.lock
+19 silly addNameRange { name: 'request', range: '*', hasData: false }
+20 verbose request where is /request
+21 verbose request registry https://registry.npmjs.org/
+22 verbose request id c10748b2f0fef53d
+23 verbose url raw /request
+24 verbose url resolving [ 'https://registry.npmjs.org/', './request' ]
+25 verbose url resolved https://registry.npmjs.org/request
+26 verbose request where is https://registry.npmjs.org/request
+27 info trying registry request attempt 1 at 16:27:22
+28 verbose etag "6Z5LPK0RFRI9OFN57Q46UDZN3"
+29 http GET https://registry.npmjs.org/request
+30 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+31 info trying registry request attempt 2 at 16:28:03
+32 verbose etag "6Z5LPK0RFRI9OFN57Q46UDZN3"
+33 http GET https://registry.npmjs.org/request
+34 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+35 info trying registry request attempt 3 at 16:29:33
+36 verbose etag "6Z5LPK0RFRI9OFN57Q46UDZN3"
+37 http GET https://registry.npmjs.org/request
+38 silly registry.get cb [ 304, undefined ]
+39 verbose etag https://registry.npmjs.org/request from cache
+40 silly addNameRange number 2 { name: 'request', range: '*', hasData: true }
+41 silly addNameRange versions [ 'request',
+41 silly addNameRange   [ '0.10.0',
+41 silly addNameRange     '0.8.3',
+41 silly addNameRange     '0.9.0',
+41 silly addNameRange     '0.9.1',
+41 silly addNameRange     '0.9.5',
+41 silly addNameRange     '1.0.0',
+41 silly addNameRange     '1.1.0',
+41 silly addNameRange     '1.1.1',
+41 silly addNameRange     '1.2.0',
+41 silly addNameRange     '1.9.0',
+41 silly addNameRange     '1.9.1',
+41 silly addNameRange     '1.9.2',
+41 silly addNameRange     '1.9.3',
+41 silly addNameRange     '1.9.5',
+41 silly addNameRange     '1.9.7',
+41 silly addNameRange     '1.9.8',
+41 silly addNameRange     '1.9.9',
+41 silly addNameRange     '2.0.0',
+41 silly addNameRange     '2.0.1',
+41 silly addNameRange     '2.0.2',
+41 silly addNameRange     '2.0.3',
+41 silly addNameRange     '2.0.4',
+41 silly addNameRange     '2.0.5',
+41 silly addNameRange     '2.1.0',
+41 silly addNameRange     '2.1.1',
+41 silly addNameRange     '2.2.0',
+41 silly addNameRange     '2.2.5',
+41 silly addNameRange     '2.2.6',
+41 silly addNameRange     '2.2.9',
+41 silly addNameRange     '2.9.0',
+41 silly addNameRange     '2.9.1',
+41 silly addNameRange     '2.9.2',
+41 silly addNameRange     '2.9.3',
+41 silly addNameRange     '2.9.100',
+41 silly addNameRange     '2.9.150',
+41 silly addNameRange     '2.9.151',
+41 silly addNameRange     '2.9.152',
+41 silly addNameRange     '2.9.153',
+41 silly addNameRange     '2.9.200',
+41 silly addNameRange     '2.9.201',
+41 silly addNameRange     '2.9.202',
+41 silly addNameRange     '2.9.203',
+41 silly addNameRange     '2.10.0',
+41 silly addNameRange     '2.11.0',
+41 silly addNameRange     '2.11.1',
+41 silly addNameRange     '2.11.2',
+41 silly addNameRange     '2.11.3',
+41 silly addNameRange     '2.11.4',
+41 silly addNameRange     '2.12.0',
+41 silly addNameRange     '2.14.0',
+41 silly addNameRange     '2.16.0',
+41 silly addNameRange     '2.16.2',
+41 silly addNameRange     '2.16.4',
+41 silly addNameRange     '2.16.6',
+41 silly addNameRange     '2.18.0',
+41 silly addNameRange     '2.19.0',
+41 silly addNameRange     '2.20.0',
+41 silly addNameRange     '2.21.0',
+41 silly addNameRange     '2.22.0',
+41 silly addNameRange     '2.23.0',
+41 silly addNameRange     '2.24.0',
+41 silly addNameRange     '2.25.0',
+41 silly addNameRange     '2.26.0',
+41 silly addNameRange     '2.27.0',
+41 silly addNameRange     '2.28.0',
+41 silly addNameRange     '2.29.0',
+41 silly addNameRange     '2.30.0',
+41 silly addNameRange     '2.31.0',
+41 silly addNameRange     '2.32.0',
+41 silly addNameRange     '2.33.0',
+41 silly addNameRange     '2.34.0',
+41 silly addNameRange     '2.35.0',
+41 silly addNameRange     '2.36.0',
+41 silly addNameRange     '2.37.0',
+41 silly addNameRange     '2.38.0',
+41 silly addNameRange     '2.39.0',
+41 silly addNameRange     '2.40.0',
+41 silly addNameRange     '2.41.0',
+41 silly addNameRange     '2.42.0',
+41 silly addNameRange     '2.43.0',
+41 silly addNameRange     '2.44.0',
+41 silly addNameRange     '2.45.0',
+41 silly addNameRange     '2.46.0',
+41 silly addNameRange     '2.47.0',
+41 silly addNameRange     '2.48.0',
+41 silly addNameRange     '2.49.0',
+41 silly addNameRange     '2.50.0',
+41 silly addNameRange     '2.51.0',
+41 silly addNameRange     '2.52.0',
+41 silly addNameRange     '2.53.0' ] ]
+42 verbose addNamed [ 'request', '2.53.0' ]
+43 verbose addNamed [ '2.53.0', '2.53.0' ]
+44 silly lockFile aee8052e-request-2-53-0 request@2.53.0
+45 verbose lock request@2.53.0 /Users/kaleo/.npm/aee8052e-request-2-53-0.lock
+46 silly lockFile ba72365e-s-org-request-request-2-53-0-tgz https://registry.npmjs.org/request/-/request-2.53.0.tgz
+47 verbose lock https://registry.npmjs.org/request/-/request-2.53.0.tgz /Users/kaleo/.npm/ba72365e-s-org-request-request-2-53-0-tgz.lock
+48 verbose addRemoteTarball [ 'https://registry.npmjs.org/request/-/request-2.53.0.tgz',
+48 verbose addRemoteTarball   '180a3ae92b7b639802e4f9545dd8fcdeb71d760c' ]
+49 info retry fetch attempt 1 at 16:30:03
+50 verbose fetch to= /var/folders/dr/0wb2mjr56yq2v1_bs5gt3pvw0000gs/T/npm-13998-JbEsxH_P/registry.npmjs.org/request/-/request-2.53.0.tgz
+51 http GET https://registry.npmjs.org/request/-/request-2.53.0.tgz
+52 error fetch failed https://registry.npmjs.org/request/-/request-2.53.0.tgz
+53 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+54 info retry fetch attempt 2 at 16:30:40
+55 verbose fetch to= /var/folders/dr/0wb2mjr56yq2v1_bs5gt3pvw0000gs/T/npm-13998-JbEsxH_P/registry.npmjs.org/request/-/request-2.53.0.tgz
+56 http GET https://registry.npmjs.org/request/-/request-2.53.0.tgz
+57 error fetch failed https://registry.npmjs.org/request/-/request-2.53.0.tgz
+58 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+59 info retry fetch attempt 3 at 16:31:40
+60 verbose fetch to= /var/folders/dr/0wb2mjr56yq2v1_bs5gt3pvw0000gs/T/npm-13998-JbEsxH_P/registry.npmjs.org/request/-/request-2.53.0.tgz
+61 http GET https://registry.npmjs.org/request/-/request-2.53.0.tgz
+62 error fetch failed https://registry.npmjs.org/request/-/request-2.53.0.tgz
+63 silly lockFile ba72365e-s-org-request-request-2-53-0-tgz https://registry.npmjs.org/request/-/request-2.53.0.tgz
+64 silly lockFile ba72365e-s-org-request-request-2-53-0-tgz https://registry.npmjs.org/request/-/request-2.53.0.tgz
+65 silly lockFile aee8052e-request-2-53-0 request@2.53.0
+66 silly lockFile aee8052e-request-2-53-0 request@2.53.0
+67 silly lockFile 9d461bcf-request request@
+68 silly lockFile 9d461bcf-request request@
+69 error network getaddrinfo ENOTFOUND
+69 error network This is most likely not a problem with npm itself
+69 error network and is related to network connectivity.
+69 error network In most cases you are behind a proxy or have bad network settings.
+69 error network
+69 error network If you are behind a proxy, please make sure that the
+69 error network 'proxy' config is set properly.  See: 'npm help config'
+70 error System Darwin 14.1.0
+71 error command "node" "/usr/local/bin/npm" "install" "-save" "request"
+72 error cwd /Users/kaleo/Documents/DevMountain/Week9-GroupProject/test
+73 error node -v v0.10.36
+74 error npm -v 1.4.28
+75 error syscall getaddrinfo
+76 error code ENOTFOUND
+77 error errno ENOTFOUND
+78 verbose exit [ 1, true ]

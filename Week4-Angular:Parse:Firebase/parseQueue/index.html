@@ -1,0 +1,19 @@
+<DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<title>ParseQ</title>
+</head>
+<body ng-app='parseQ' ng-controller='mainCtrl'>
+
+<input type='text' ng-model='question' placeholder='Enter question here'>
+<button ng-click='postData()'> Submit </button>
+
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/mainCtrl.js"></script>
+<script src="js/parseService.js"></script>
+<script src="js/defaultHeaders.js"></script>
+</body>
+</html>

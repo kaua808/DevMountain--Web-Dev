@@ -1,0 +1,53 @@
+app.get('/api/getdaapartments', function(req, res) {
+	// console.log(1)
+	function getAllApartments () { 
+	var apartmentsArray = []
+	// console.log(2)
+	function closure () {
+		// console.log(3)
+		var page = 1
+		var counter = 0;
+		return function () {
+			// console.log(4)
+			var url = 'https://www.rentler.com/ksl/search?sid=17403777&nid=651&PropertyTypeCode=2&page=' + page
+			console.log(url);
+			console.log(counter)
+			request.get(url, function(err, resp, body) {
+				// console.log(5)
+				if(!err && resp.statusCode === 200) {
+					// console.log(6)
+					var $ = cheerio.load(body);
+					$('.result', '.results').each(function(index, item) {
+						var house = {};
+						house.type = 'apartment';
+						item.children[1].attribs.href ? house.kslUrl = item.children[1].attribs.href : house.kslUrl = '';
+						item.children[1].children[1].children[1].attribs.src ? house.imgUrl = item.children[1].children[1].children[1].attribs.src : house.imgUrl = '';
+						item.children[1].children[3].children[1].children[0].data ? house.title = item.children[1].children[3].children[1].children[0].data : house.title = '';
+						item.children[1].children[3].children[3].children[0].data ? house.location = item.children[1].children[3].children[3].children[0].data : house.location = '';
+						item.children[1].children[3].children[5].children[0].data ? house.bedBaths = item.children[1].children[3].children[5].children[0].data : house.bedBaths = '';
+						item.children[1].children[3].children[7].children[1].children[0].data ? house.pricePerMonth = item.children[1].children[3].children[7].children[1].children[0].data : house.pricePerMonth = '';
+						apartmentsArray.push(house);
+					})
+					// console.log(urls[0].children[1].children[3].children[7].children[1].children[0].data)
+					var result = $('.result', '.results');
+					// console.log(result[0].children[1].attribs.href)
+					if(result[0]) {
+						// console.log(result[0])
+						counter++
+						page++;
+						getApartments();
+					} else {
+						// console.log(result)
+						page = 1;
+						// console.log(apartmentsArray);
+						return res.json(apartmentsArray)
+					}
+				}
+			})
+		}
+	}
+	var getApartments = closure();
+	getApartments();
+}
+getAllApartments();
+})

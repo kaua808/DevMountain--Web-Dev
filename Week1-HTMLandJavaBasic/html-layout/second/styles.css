@@ -1,0 +1,37 @@
+body {
+	background: #EEE;
+}
+
+.container {
+	width: 800px;
+	height: 800px;
+	margin: 0 auto;
+}
+
+.one {
+	background: red;
+	height: 100%;
+	width: 33%;
+	float: left;
+}
+.two {
+	background: blue;
+	height: 100%;
+	width: 34%;
+	float: left;
+}
+.three {
+	background: red;
+	height: 100%;
+	width: 33%;
+	float: left;
+}
+
+.four {
+	height: 75%;
+
+}
+.text { 
+	height: 25%
+
+}

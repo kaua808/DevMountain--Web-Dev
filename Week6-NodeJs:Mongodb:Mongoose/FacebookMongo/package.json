@@ -1,0 +1,30 @@
+{
+  "name": "FacebookViewer_Working",
+  "version": "0.0.0",
+  "description": "FacebookViewer ==============",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DevMountain/FacebookViewer"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DevMountain/FacebookViewer/issues"
+  },
+  "homepage": "https://github.com/DevMountain/FacebookViewer",
+  "dependencies": {
+    "body-parser": "^1.11.0",
+    "express": "^4.11.2",
+    "express-session": "^1.10.2",
+    "mongodb": "^1.4.30",
+    "mongojs": "^0.18.1",
+    "mongoose": "^3.8.23",
+    "passport": "^0.2.1",
+    "passport-facebook": "^1.0.3"
+  }
+}

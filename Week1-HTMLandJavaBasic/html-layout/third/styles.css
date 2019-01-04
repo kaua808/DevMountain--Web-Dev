@@ -1,0 +1,62 @@
+body, html {
+	height:100%;
+}
+
+.one {
+	height: 15%;
+	width: 100%;
+	background: #eee;
+}
+.mini {
+	height: 57px;
+	width: 57px;
+	background: blue;
+	margin-left: 11px;
+	margin-top: 20px;
+	float: left;
+}
+.two {
+	height: 23%;
+	width: 100%;
+	background: white;
+	font-size: 20rem;
+}
+.three {
+	height: 15%;
+	width: 100%;
+	background: #0000FF;
+
+}
+.four {
+	height: 15%;
+	width: 100%;
+	background: #00CC66;
+
+}
+.five {
+	height: 15%;
+	width: 100%;
+	background: #99FF99;
+
+}
+.six {
+	height: 15%;
+	width: 100%;
+	background: #FFFF66;
+}
+
+span {
+	border-spacing: 20px; 
+	width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+

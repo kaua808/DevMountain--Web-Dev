@@ -1,0 +1,29 @@
+{
+  "name": "loan-calculator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kajdav/loan-calculator"
+  },
+  "keywords": [
+    "loan",
+    "calculator"
+  ],
+  "author": "Jacob Turner",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kajdav/loan-calculator/issues"
+  },
+  "homepage": "https://github.com/kajdav/loan-calculator",
+  "dependencies": {
+    "body-parser": "^1.9.0",
+    "cors": "^2.4.2",
+    "express": "^4.9.7"
+  }
+}

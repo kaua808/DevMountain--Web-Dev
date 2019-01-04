@@ -1,0 +1,82 @@
+body, html {
+	height: 100%;	
+	margin: 0;
+	background-color: #d8d8d8;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	padding: 15px;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	width: 100%;
+
+}
+
+.top {
+	background-color: #fff;
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+p {
+	padding: 10px;
+}
+
+.button { 
+	display:flex;
+	flex-content: row;
+	padding: 20px;
+}
+
+.click {
+	color: white;
+	margin-left: 20px;
+	padding: 20px;
+}
+
+.red {
+	background-color: red;
+}
+
+.blue {
+	background-color: blue;
+}
+
+.bottom {
+	background-color: #fff;
+	width: 100%;
+	
+}
+
+img { 
+	margin: 0 auto 0 auto;
+	width: 100%;
+	max-width: 400px;
+	height: auto;
+}
+
+.foot {
+	background-color: #333;
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+
+
+}
+
+.link {
+	color: white;
+	margin: 5px;
+	padding: 20px;
+}
+
+
+

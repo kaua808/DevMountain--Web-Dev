@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="normalize.css" >
+		<link rel="stylesheet" href="styles.css" >
+	</head>
+	<body>
+		<header class="navbar">
+			<span class="M__link">
+				M
+			</span>
+			<span class="nav__text">
+				<div>Published In</div>
+				<div>React Tutorials</div>
+			</span>
+			<span class="sign__in-up"> 
+				Sign in/Sign up
+			</span>
+		</header>
+		<div>
+			<img class="main__img" src="https://d262ilb51hltx0.cloudfront.net/max/2000/1*bs9PbxDndAW7mmqve3EQ-w.jpeg">
+		</div>
+		<div class="main__content">
+			<h1>React Components</h1>
+			<p>Components are the smallest, yet most fundamental part of React. They’re similar, in concepts, to things like widgets and modules. React defines itself as a library for building user interfaces. As such, when you think of a user interface you want to build (with React), you need to think of it in terms of the smallest possible components that you can define.</p>
+
+			<p>These components include code which defines how DOM elements are created and how users can interact with them. Components can be defined purely in JavaScript or they can be defined in a superset (or extended variation) of JavaScript called JSX. If you decide to use JSX for your component definitions, you may also need a compiler application, but we’ll get to that in a minute.</p>
+
+			<div class="block__quote">
+				<p class="quote">We’re going to be referring to pure JavaScript as JS and the React version of JavaScript as JSX.</p>
+				<p class="quote">You can find the accompanying source-code, for this tutorial, at: https://github.com/formativ/tutorial-react-components.</p>
+				<p class="quote">Please post any errors you find, or questions you have as comments on this article or as issues on GitHub.</p>
+				<p class="quote">Thanks to Pete Hunt for helping to improve this!</p>
+			</div>
+			<h3>Embedded HTML</h3>
+			<p>If you’ve been developing websites for a while, you may have flinched when I spoke about using HTML within your JavaScript. For the longest time, a development paradigm has existed which says that you should split HTML and JavaScript. Words like </p>
+
+			<p>The reason this paradigm exists is to decrease coupling (how much things depend on each other) and increase cohesion (how well different things work together). So we have created an environment in which we try our best to make HTML (and templates) as free of logic as possible. We then need to attach behaviour to this in the form of external scripts.</p>
+
+			<p>There are trade-offs with this approach to doing things. For starters, it takes more effort trying to keep these two things separate. There are many template engines and languages. There are also many template parsers to handle them all. And yet these languages (with the exception of HTML) still seem to include a modicum of logical operations…</p>
+			
+			<p>Additionally, when we need to modify the contents of a web page, via JavaScript, we have to know about HTML and/or templates. How else can we know what to display and where to display it? We could load external templates, via additional HTTP requests, but how would we know where to put it without some knowledge of the DOM? We could load templates embedded within special script tags, but we would first need to fetch the contents of those script tags.</p>
+			
+			<p>This brings us to the biggest problem with the separation of HTML and JavaScript: The only way we can get elements to attach behaviour to, and read data from, is by knowing about HTML elements in the document. Libraries like jQuery are built around the idea that HTML elements are only a CSS selector away from JavaScript.</p>
+
+			<div class="block__quote">
+				<p class="quote">These points from from a presentation I found</p>
+				<p class="quote">at: http://www.slideshare.net/floydophone/react-preso-v2.</p>
+			</div>
+
+			<h3>Components</h3>
+			<p>Hopefully you’re willing to try this whole embedded HTML thing. In case not, I will create JS examples along with the JSX examples in this tutorial Let’s look at a simple component, just to get a feel for how one defines them:</p>
+
+			<div class="examples">
+				<pre name="f044" class="graf--pre"><a id="f044"></a>/**<br> * @jsx React.DOM<br> */<br>  <br>var HelloWorld = React.createClass({<br>  render&nbsp;: function() {<br>    return &lt;div&gt;hello world!&lt;/div&gt;;<br>  }<br>});<br><br>React.renderComponent(<br>  &lt;HelloWorld /&gt;,<br>  document.body<br>);</pre>
+			</div>
+
+
+		</div>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+

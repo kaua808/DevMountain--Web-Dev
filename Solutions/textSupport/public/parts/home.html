@@ -1,0 +1,14 @@
+<div>
+    <div ng-repeat="number in texts">
+        <button ng-click="respond(number.$id)">Respond</button>
+        <h2><em>From:</em> {{number.$id}}</h2>
+        <div style="border:1px solid black" ng-repeat="text in number">
+            <div ng-repeat="(key, value) in text">
+                <em>{{key}}:</em> {{value}}
+            </div>
+        </div>
+
+
+    </div>
+
+</div>

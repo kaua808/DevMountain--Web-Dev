@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Listo</title>
+</head>
+<body>
+
+	<form id='NewTaskForm'>
+		<label>New</label>
+		<input id='NewItemInput' placeholder='new task'>
+		<button id='saveNewItem'>Save</button>
+		<buttonn id='cancel'Cancel</buttonn>
+	</form>
+
+	<div class='new-item-header'>
+		<button href="#" class="pull-right pencil" id="newListItem" style="">New</button>
+	</div>
+
+	<div id="newList">
+		New List
+	</div>
+
+	<div class='panel'>
+		in progress
+		<ul class='list-group' id='currentList'></ul>
+	</div>
+
+	<div class='panel'>
+		archived
+		<ul class='list-group' id='archivedList'></ul>
+	</div>
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</body>
+</html>

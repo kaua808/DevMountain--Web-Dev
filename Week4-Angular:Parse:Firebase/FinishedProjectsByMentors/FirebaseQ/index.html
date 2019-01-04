@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app='parseQ'>
+<head>
+	<title>ParseQ</title>
+	<link rel='stylesheet' href='main.css'>
+	<link href='http://fonts.googleapis.com/css?family=Roboto:300,700,400' rel='stylesheet' type='text/css'>
+</head>
+<body ng-controller='mainCtrl'>
+<div class='container'>
+	<div class='top-bar'>
+		<div class='ask-question'>
+			<input type='text' placeholder='Question' ng-model='question'>
+			</input>
+			<button ng-click='postData()'>Submit</button>
+		</div>
+	</div>
+	<div class='flex-box'>
+		<div class='queue'>
+			<h1>In the Queue</h1>
+			<div ng-repeat='data in questions | filter:{color: "red"}'>
+				<button ng-click='updateData(data)'>></button>{{data.question}}
+			</div>
+		</div>
+		<div class='helped'>
+			<h1>Being Helped</h1>
+			<div ng-repeat='data in questions | filter:{color: "yellow"}'>
+				<button ng-click='deleteData(data)'>X</button>{{data.question}}
+			</div>
+		</div>
+	</div>
+</div>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
+<script src="https://cdn.firebase.com/js/client/2.0.4/firebase.js"></script>
+<script src="https://cdn.firebase.com/libs/angularfire/0.9.2/angularfire.min.js"></script>
+<script src='/js/app.js'></script>
+<script src='/js/mainController.js'></script>
+<script src='/js/firebaseService.js'></script>
+<script src='/js/defaultHeaders.js'></script>
+</body>
+</html>

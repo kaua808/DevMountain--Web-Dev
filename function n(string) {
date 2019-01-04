@@ -1,0 +1,8 @@
+function n(string) {
+	var obj = {},
+	var arr = string.split("");
+	for (var i = 0; i < arr.length; i++) {
+	obj[arr[i]] ? arr.apliced(i--, 1) : obj[arr[i]] = true;
+	}
+	return arr.join("");
+}

@@ -1,0 +1,42 @@
+1) rules
+	-the first parameter is an array
+	-the array will contain strings
+	-the second parameter is a function;
+
+2)explore the problem space
+	-loop thorugh all my names
+	-object as a lookup table
+	-dont need to return anything
+	-invoke the second parameter
+	-n^2 vs constant time
+
+3)the code were given
+
+4)steps
+	-create a function called uniq which takes in an array and a callback function
+	-create an empty object
+	-loop over my array for the length of the array
+		-look to see if the individual item in the array (name) is a key /value pair in my object. if it isnt
+		 push the name to my new array and add it as a property/value on my object. if it is, ignore it
+	-invoke the callback function passing it the new array.
+
+5)
+
+
+var uniq = function(arr, cb) {
+	var obj = {};
+	var newArr = [];
+	for (var i = 0; i < arr.length; i++){
+		if(!obj[arr[i]]){
+	    	newArr.push(arr[i]);
+	    	obj[arr[i]] = true;
+	 	}
+	} cb(newArr);
+}
+
+
+
+var names = ["kaleo", "kaleo", "Ann"];
+uniq(names, function(uniqArr){
+	console.log(uniqArr);
+})
